@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>mif_generation</title>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <script src="js/canvas.js"></script>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">字符画在线转mif文件</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-8">
+            <form>
+                <div class="form-group">
+                    <label>
+                        字符画
+                        <a href="http://www.network-science.de/ascii/">（如何获得？）</a>
+                    </label>
+                    <textarea class="form-control" rows="20" cols="70" id="pic" placeholder="                                _
+  _____  ____ _ _ __ ___  _ __ | | ___
+ / _ \ \/ / _` | '_ ` _ \| '_ \| |/ _ \
+|  __/>  < (_| | | | | | | |_) | |  __/
+ \___/_/\_\__,_|_| |_| |_| .__/|_|\___|
+                         |_|           "></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label>屏幕长度</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control"  placeholder="70" size="3" maxlength="3">
+                        <div class="input-group-addon">个字符</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label>屏幕宽度</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control"  placeholder="30" size="3" maxlength="3">
+                        <div class="input-group-addon">个字符</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-lg" id="submit">转换！</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div id="info">
+                <p>将字符画在线转换为供verilog语言初始化存储器的.mif文件</p>
+                <p>让纯字符界面也可以呈现图形界面的效果w</p>
+                <br>
+                注意事项：
+                <ul>
+                    <li>字符画会根据屏幕尺寸自动调整为居中，请勿在字符画四周添加不必要的空格</li>
+                    <li>字符画的尺寸不能大于屏幕尺寸</li>
+                    <li>屏幕尺寸小于1000*1000</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    /*background-color: #edf6ff;*/
+    background-color: black;
+}
+
+canvas{
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-control#pic{
+    font-family: monospace;
+    width: auto;
+}
+
+.input-group{
+    width: 120px;
+}
+
+#submit{
+    margin-top: 18px;
+}
+
+#info{
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 30%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+label{
+    color: white;
+}
+
