@@ -33,21 +33,21 @@
                          |_|           "></textarea>
                 </div>
                 <div class="col-md-4">
-                    <label>屏幕长度</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control"  placeholder="70" size="3" maxlength="3">
-                        <div class="input-group-addon">个字符</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
                     <label>屏幕宽度</label>
                     <div class="input-group">
-                        <input type="email" class="form-control"  placeholder="30" size="3" maxlength="3">
+                        <input type="text" class="form-control" id="width" placeholder="70" size="3" maxlength="3">
                         <div class="input-group-addon">个字符</div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <button class="btn btn-primary btn-lg" id="submit">转换！</button>
+                    <label>屏幕高度</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="height" placeholder="30" size="3" maxlength="3">
+                        <div class="input-group-addon">个字符</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary btn-lg" id="submit">转换！</button>
                 </div>
             </form>
         </div>
@@ -67,5 +67,7 @@
         </div>
 
     </div>
+    <script src="js/jQuery.js"></script>
+    <script src="js/mif_logic.js"></script>
 </body>
 </html>
